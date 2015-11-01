@@ -99,3 +99,6 @@ h3:first-child, h2:first-child {
 p.logo {
     text-align: center;
 }
+span.employeur {
+    font-weight: 600;
+}
