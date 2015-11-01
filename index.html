@@ -1,1 +1,36 @@
-Hello world
+<html>
+<head>
+    <title>Romain Bessuges-Meusy</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="reset.css" media="screen"/>
+    <link rel="stylesheet" href="style.css" media="screen"/>
+    <link rel="stylesheet" href="print.css" media="print"/>
+</head>
+<body>
+    <div id="apropos" class="bloc">
+        <h1>À propos</h1>
+        <div class="content">
+
+        </div>
+    </div>
+    <div id="formations" class="bloc">
+        <h1>Formations</h1>
+        <div class="content">
+
+        </div>
+    </div>
+<div id="experiences" class="bloc">
+    <h1>Expériences</h1>
+
+    <div class="content">
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $('#apropos .content').load("http://www.campsi.io/api/v1/projects/cv-romain/collections/a-propos/entries/56362d9ebdc9dace4b17eb59?template=entry");
+    $('#experiences .content').load("http://www.campsi.io/api/v1/projects/cv-romain/collections/experiences/entries?template=website");
+    $('#formations .content').load("http://www.campsi.io/api/v1/projects/cv-romain/collections/formations/entries?template=website");
+</script>
+</body>
+</html>
